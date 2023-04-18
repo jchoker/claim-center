@@ -16,16 +16,16 @@ public class PhysicianService {
 
     private final PhysicianRepository repo;
 
+    public List<PhysicianReference> getAllPhysicians() {
+        var physicians = repo.findAll();
+        return physicians.stream().map(p -> mapToPhysicianReference(p)).toList();
+    }
+
     static PhysicianReference mapToPhysicianReference(Physician physician) {
         if(physician == null) return  null;
         return PhysicianReference.builder()
                 .id(physician.getId())
                 .name(physician.getName())
                 .build();
-    }
-
-    public List<PhysicianReference> getAllPhysicians() {
-        var physicians = repo.findAll();
-        return physicians.stream().map(p -> mapToPhysicianReference(p)).toList();
     }
 }

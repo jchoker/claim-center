@@ -21,7 +21,7 @@ public class Patient {
     @Column(length = 100, nullable = false)
     private String name;
 
-    @Size(min = 16, max = 16)
+    @Size(min = 16, max = 16) // ensures inserted card no. is exactly 16 characters long (Hibernate validator)
     @Column(unique = true, nullable = false)
     private String cardNumber;
 
