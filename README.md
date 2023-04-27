@@ -9,18 +9,20 @@ Technologies:
 	 testing, JUnit, Hibernate, jpql, MySQL/PostgreSQL, Docker, Jib, Maven, Lombok, HATEOAS
 
 Setup:  
-Install mysql server then create 'claim-center' schema (not required for container)  
+Install mysql or PostgreSQL server then create 'claim-center' schema (not required for container)  
 Once the app runs, it creates setup data in the db  
+
 For dtos embedded custom fields (foreign keys) included 2 fields id and type, id used when adding data (post meth.)  
  and type when retieving data (get meth.) e.g. physician_i/physician
 
 Resources:  
-start.spring.io/  
-springdoc.org/  (integration between spring-boot and swagger-ui)  
-cloud.google.com/java/getting-started/jib  
-dev.mysql.com/downloads/windows/installer/8.0.html (Mysql 8.0.32 download)  
-dev.mysql.com/downloads/workbench/  
-spring.io/guides/tutorials/rest/ section 'What makes something RESTful'?  
+www.start.spring.io/  
+www.springdoc.org/  (integration between spring-boot and swagger-ui)  
+www.cloud.google.com/java/getting-started/jib  
+www.dev.mysql.com/downloads/windows/installer/8.0.html (Mysql 8.0.32 download)  
+www.dev.mysql.com/downloads/workbench/  
+www.enterprisedb.com/downloads/postgres-postgresql-downloads v 15.2  
+www.spring.io/guides/tutorials/rest/ section 'What makes something RESTful'?  
 
 
 Swagger UI:  
